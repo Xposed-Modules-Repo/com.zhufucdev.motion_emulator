@@ -2,7 +2,7 @@
 
 # MotionEmulator
 
-English Version | [中文文档](README_zh.md)
+English Version | [中文文档](https://github.com/Xposed-Modules-Repo/com.zhufucdev.motion_emulator/blob/main/README_zh.md)
 
 Android motion simulator with sensor support.
 
