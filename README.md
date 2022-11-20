@@ -2,6 +2,8 @@
 
 # MotionEmulator
 
+English Version | [中文文档](README_zh.md)
+
 Android motion simulator with sensor support.
 
 ## Scenarios
