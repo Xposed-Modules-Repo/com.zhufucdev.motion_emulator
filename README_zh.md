@@ -1,5 +1,3 @@
-> 此项目处于积极开发阶段
-
 # MotionEmulator
 
 [English Version](https://github.com/Xposed-Modules-Repo/com.zhufucdev.motion_emulator/blob/main/README.md) | 中文文档
@@ -19,6 +17,18 @@
 * 在地图上画个圈儿，表示你想要在那儿模拟跑，或许绕中国大陆画是个好主意
 * 设置好速度和圈数
 * Make more time
+
+### 加盐
+现在，每次模拟，跑的路径都是完全相同的
+
+要让它不那么可疑
+
+* 打开`管理`页面，找到那个路径
+* `新建`一个`随机因子`，比如`x`
+* 加点盐，比如`旋转`
+* 展开你刚加点盐，然后开始敲键盘，加入一些你喜欢点数学表达式，并设法让其中含有`x`
+
+便条：可能需要一点线性代数的知识
 
 ## 构建指南
 
