@@ -1,6 +1,7 @@
 # MotionEmulator
+<img src="art/MotionEmulator.svg" width="200">
 
-English Version | [中文文档](https://github.com/Xposed-Modules-Repo/com.zhufucdev.motion_emulator/blob/main/README_zh.md)
+English Version | [中文文档](README_zh.md)
 
 Android motion simulator with sensor support.
 
@@ -37,23 +38,27 @@ To reverse the behavior to make it not so sus
 
 Note: knowledge of linear algebra may be needed
 
+### For users whose targeting location is in China mainland
+
+Due to mapping restrictions, ensure that **coordinate system**
+of the pending trace in Manage -> Trace page is set to **GCJ02**
+
+If you are curious, go ahead to
+[Restrictions on geographic data in China](https://en.wikipedia.org/wiki/Restrictions_on_geographic_data_in_China)
+
 ## Build Instructions
 
 Build and maintain this project with Android Studio
 or Intellij IDEA.
 
-This app contains sdk from Amap, thus **api keys** are
+This app contains sdk from Amap and Google Maps, thus **api keys** are
 required.
 Obtain them from [here](https://console.amap.com/dev/key/app)
-and create a xml file under `app/src/main/res/values`
+[and here](https://developers.google.com/maps/documentation/android-sdk/start)
 ```shell
-cd app/src/main/res/values
-touch amap.xml
-## Android SDK ##
-echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" >> amap.xml
-echo "<resources><string name=\"amap_api_key\" translatable=\"false\">$android_sdk_key</dimen></resources>" >> amap.xml
-## REST API ##
-echo $rest_api >> local.properties
+echo amap.web.key="<Your Key>" >> local.properties
+echo AMAP_SDK_KEY="<Your Key>" >> local.properties
+echo GCP_MAPS_KEY="<Your Key>" >> local.properties
 ```
 
 ## License

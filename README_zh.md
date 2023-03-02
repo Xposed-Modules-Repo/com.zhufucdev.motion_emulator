@@ -1,12 +1,14 @@
 # MotionEmulator
 
-[English Version](https://github.com/Xposed-Modules-Repo/com.zhufucdev.motion_emulator/blob/main/README.md) | 中文文档
+<img src="art/MotionEmulator.svg" width="200">
+
+[English Version](README.md) | 中文文档
 
 带有传感器支持的Android运动模拟器
 
 ## 为啥要用
 
-如果你是不幸的中国大学生，想必对 _校园跑_ 比较熟悉
+如果你是不幸的中国大学生，或许体验过 _校园跑_
 
 尽管教职工总希望我们在夕阳下跑阳光长跑，我想做些有创造性的事情来让生活更轻松一点
 
@@ -30,22 +32,27 @@
 
 便条：可能需要一点线性代数的知识
 
+### 对于目标位置在中国大陆的用户
+
+由于地图测绘的限制，请在使用一个路径前，先去
+管理 -> 路径 页面将该路径的**坐标系统**改为**GCJ02**
+
+好奇的话，参阅
+[Restrictions on geographic data in China](https://en.wikipedia.org/wiki/Restrictions_on_geographic_data_in_China)
+
 ## 构建指南
 
 如果你是开发者，请使用Android Studio或Jetbrains IDEA构建和维护这个项目
 
 
-项目使用了高德地图API，你得申请一个自己的，网址在[这儿](https://console.amap.com/dev/key/app)
+项目使用了高德地图和Google Maps的API，你得申请些自己的，网址在[这儿](https://console.amap.com/dev/key/app)和
+[这儿](https://developers.google.com/maps/documentation/android-sdk/start)
 
 申请完别忘了做些事情
 ```shell
-cd app/src/main/res/values
-touch amap.xml
-## Android SDK ##
-echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" >> amap.xml
-echo "<resources><string name=\"amap_api_key\" translatable=\"false\">$android_sdk_key</dimen></resources>" >> amap.xml
-## REST API ##
-echo $rest_api >> local.properties
+echo amap.web.key="<Your Key>" >> local.properties
+echo AMAP_SDK_KEY="<Your Key>" >> local.properties
+echo GCP_MAPS_KEY="<Your Key>" >> local.properties
 ```
 
 ## 营业执照
