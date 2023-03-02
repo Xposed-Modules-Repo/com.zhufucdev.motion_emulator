@@ -1,7 +1,7 @@
 # MotionEmulator
-<img src="art/MotionEmulator.svg" width="200">
+<img src="https://github.com/zhufucdev/MotionEmulator/art/MotionEmulator.svg" width="200">
 
-English Version | [中文文档](README_zh.md)
+English Version | [中文文档](https://github.com/zhufucdev/MotionEmulator/README_zh.md)
 
 Android motion simulator with sensor support.
 
