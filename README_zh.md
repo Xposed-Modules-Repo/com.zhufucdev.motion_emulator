@@ -1,10 +1,10 @@
 # MotionEmulator
 
-<img src="art/MotionEmulator.svg" width="200">
+<img src="https://github.com/zhufucdev/MotionEmulator/blob/main/art/MotionEmulator.svg" width="200">
 
-[English Version](README.md) | 中文文档
+[English Version](https://github.com/zhufucdev/MotionEmulator/blob/main/README.md) | 中文文档
 
-带有传感器支持的Android运动模拟器
+Motion Emulator是个模拟连续定位和传感器变化的Xposed模块
 
 ## 为啥要用
 

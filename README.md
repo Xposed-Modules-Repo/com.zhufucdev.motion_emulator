@@ -3,7 +3,8 @@
 
 English Version | [中文文档](https://github.com/zhufucdev/MotionEmulator/blob/main/README_zh.md)
 
-Android motion simulator with sensor support.
+Motion Emulator is an Xposed module that allows
+you to mock location and sensor data, but in a continuous manner.
 
 
 ## Scenarios
