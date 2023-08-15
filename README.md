@@ -1,7 +1,7 @@
 # MotionEmulator
-<img src="art/MotionEmulator.svg" width="200">
+<img src="https://github.com/zhufucdev/MotionEmulator/raw/main/art/MotionEmulator.svg" width="200">
 
-English Version | [中文文档](README_zh.md)
+English Version | [中文文档](https://github.com/zhufucdev/MotionEmulator/blob/main/README_zh.md)
 
 Motion Emulator is an application platform that allows 
 you to mock location and sensor data using different methods,
